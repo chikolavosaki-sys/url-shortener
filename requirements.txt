@@ -5,6 +5,7 @@ psycopg2-binary
 redis
 python-dotenv
 pydantic
+pydantic-settings
 alembic
 httpx
 pytest
