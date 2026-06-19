@@ -43,4 +43,9 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run tests
+        env:
+          DATABASE_URL: postgresql://postgres:alookachalu@localhost:5432/url_shortener
+          REDIS_URL: redis://localhost:6379
+          BASE_URL: http://testserver
+          SECRET_KEY: test_secret
         run: pytest -v
